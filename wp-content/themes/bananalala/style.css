@@ -6,6 +6,10 @@
     font-family: KBZipaDeeDooDah;
     src: url(fonts/KBZipaDeeDooDah.ttf);
 }
+
+body{
+    margin: 20px;
+}
 .bloginfo{
     font-family: KBZipaDeeDooDah;
     color: #393939;
@@ -16,6 +20,7 @@
 .headerimg{
     width: 100%;
     height: 100%;
+    margin-top: -15px;
 }
 .right-nav{
     display: block;
@@ -30,7 +35,7 @@
 }
 
 .right-nav ul li{
-    padding: 0px 0px 22px 15px;
+    padding: 4px 20px 22px 20px;
     display: block;
     font-family: BebasNeue;
 }
@@ -42,17 +47,15 @@
     text-align: center;
 
 }
-
-.right-nav ul li a:hover{
-    background-color: #f2d513;
-    padding: 20px 25px 50px 25px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
 .current-menu-item{
     background-color: #f2d513;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding: 20px 25px 50px 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.footer{
+    background-color: #202020;
+    width: 100%;
+    height: 336px;
+    bottom: 0;
 }
