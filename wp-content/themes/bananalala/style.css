@@ -1,0 +1,58 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: KBZipaDeeDooDah;
+    src: url(fonts/KBZipaDeeDooDah.ttf);
+}
+.bloginfo{
+    font-family: KBZipaDeeDooDah;
+    color: #393939;
+    font-size: 30pt;
+    float: left;
+}
+
+.headerimg{
+    width: 100%;
+    height: 100%;
+}
+.right-nav{
+    display: block;
+    float: right;
+}
+
+.right-nav ul{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    padding: 20px 150px 0px 0px;
+}
+
+.right-nav ul li{
+    padding: 0px 0px 22px 15px;
+    display: block;
+    font-family: BebasNeue;
+}
+
+.right-nav ul li a{
+    text-decoration: none;
+    color: #393939;
+    font-size: 18pt;
+    text-align: center;
+
+}
+
+.right-nav ul li a:hover{
+    background-color: #f2d513;
+    padding: 20px 25px 50px 25px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.current-menu-item{
+    background-color: #f2d513;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px 25px 50px 25px;
+}

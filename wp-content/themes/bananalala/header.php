@@ -13,7 +13,15 @@
         <?php wp_head(); ?>
     </head>
     <body>
-        <?php
-        // Fix menu overlap
-        if ( is_admin_bar_showing() ) echo '<div style="min-height: 32px;"></div>';
-        ?>
+        <nav class="nav navbar-nav navbar-right">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="<?php echo home_url();?>"><h1 class="navbar-brand bloginfo"><?php bloginfo( 'name' ); ?></h1></a>
+                </div>
+                <div class="nav navbar-nav right-nav">
+                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'menu' ) ); ?>
+                </div>
+            </div>
+        </nav>
+        <img class="headerimg" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="200343295-001" />
+
