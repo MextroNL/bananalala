@@ -18,7 +18,6 @@
                 <div class="navbar-header">
                     <a href="<?php echo home_url();?>"><h1 class="navbar-brand bloginfo"><?php bloginfo( 'name' ); ?></h1></a>
                 </div>
-                <div class="afrikaans"></div>
                 <div class="nav navbar-nav right-nav">
                     <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'menu' ) ); ?>
                 </div>
