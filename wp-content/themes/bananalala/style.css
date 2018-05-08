@@ -59,3 +59,56 @@ body{
     height: 336px;
     bottom: 0;
 }
+
+.footer-title{
+    font-family: BebasNeue;
+    color: #fff;
+    font-size: 41pt;
+    padding-left: 100px;
+}
+.footer-1{
+    list-style: none;
+}
+.footer-2{
+    list-style: none;
+}
+.footer-3{
+    list-style-type: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Media Query*/
+@media screen and (max-width: 1036px) {
+    .footer-title{
+        font-size: 3em!important;
+    }
+}
+/*Tablet*/
+@media screen and (max-width: 991px) {
+
+    .footer-title{
+        text-align: center!important;
+        font-size: 2.5em!important;
+        padding-left: 0px!important;
+    }
+    .footer{
+        height: auto;
+    }
+    .footer-1{
+        text-align: center;
+    }
+
+}
+
+/*Phone*/
+@media screen and (max-width: 480px) {
+    .footer-title{
+        text-align: center!important;
+        font-size: 2em!important;
+        padding-left: 0px!important;
+    }
+    .footer{
+        height: auto;
+    }
+}

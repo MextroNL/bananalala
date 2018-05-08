@@ -20,6 +20,49 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
+/**
+ * Register sidebars and widgetized areas.
+ *
+ */
+function arphabet_widgets_init() {
+
+    register_sidebar( array(
+        'name' => 'Footer Widget Left',
+        'id' => 'footer-widget-left',
+        'description' => 'Appears in the footer area',
+        'before_widget' => '<div class="footer-1">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="footer-title">',
+        'after_title' => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name' => 'Footer Widget Middle',
+        'id' => 'footer-widget-middle',
+        'description' => 'Appears in the footer area',
+        'before_widget' => '<div class="footer-2">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="footer-title">',
+        'after_title' => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name' => 'Footer Widget Right',
+        'id' => 'footer-widget-right',
+        'description' => 'Appears in the footer area',
+        'before_widget' => '<div class="footer-3">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="footer-title">',
+        'after_title' => '</h3>',
+    ) );
+
+}
+
+
+
+
+
+
+add_action( 'widgets_init', 'arphabet_widgets_init' );
+
 //                    //Theme Functions
 //                function mytheme_customize_register( $wp_customize ) {
 //                    //All our sections, settings, and controls will be added here
