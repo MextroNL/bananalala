@@ -9,6 +9,8 @@ $args = array(
     'default-image' => get_template_directory_uri() . '/images/header.jpg',
 );
 add_theme_support( 'custom-header', $args );
+add_theme_support( 'post-thumbnails' );
+//set_post_thumbnail_size( 295, 295 );
 //
 function wpdocs_theme_name_scripts() {
     wp_enqueue_style( 'style-name', get_stylesheet_uri() );

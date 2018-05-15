@@ -6,9 +6,12 @@
     font-family: KBZipaDeeDooDah;
     src: url(fonts/KBZipaDeeDooDah.ttf);
 }
-
+html{
+    background-color: #f5f4f4;
+}
 body{
     margin: 20px;
+    background-color: #f5f4f4;
 }
 .bloginfo{
     font-family: KBZipaDeeDooDah;
@@ -78,6 +81,54 @@ body{
     text-decoration: none;
 }
 
+/*Posts*/
+.post-block{
+    height: 295px;
+    width: 70%;
+    background-color: #fff;
+    margin-bottom: 55px;
+}
+.post-image img{
+    float: left;
+    display: inline-block;
+    width: 295px;
+    height: 295px;
+}
+.post-info{
+
+}
+.post-content{
+    font-family: Tahoma;
+    padding-left: 20px;
+    width: 70%;
+    display: inline-block;
+    padding-top: 15px;
+}
+.post-title{
+    padding-top: 15px;
+    font-family: BebasNeue;
+    display: inline;
+    padding-left: 20px;
+}
+.post-subtitle{
+    font-family: Tahoma;
+    display: inline;
+    padding-left: 20px;
+
+}
+
+.prev-link{
+    list-style-image:url('images/previous.png');
+}
+
+.next-link{
+    list-style-image:url('images/next.png');
+}
+
+/*Sidebar*/
+.sidebar{
+
+}
 /*Media Query*/
 @media screen and (max-width: 1036px) {
     .footer-title{
