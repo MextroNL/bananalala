@@ -114,7 +114,7 @@ function arphabet_widgets_init() {
 
 add_action( 'widgets_init', 'arphabet_widgets_init' );
 
-//                    //Theme Functions
+//
 //                function mytheme_customize_register( $wp_customize ) {
 //                    //All our sections, settings, and controls will be added here
 //                    //Setting

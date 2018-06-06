@@ -1,5 +1,5 @@
-<div class="row sidebar">
-    <div class="col-lg-12">
+<div class="col-lg-2 sidebar">
+
         <?php
         if(is_active_sidebar('sidebar-widget-0')){
             dynamic_sidebar('sidebar-widget-0');

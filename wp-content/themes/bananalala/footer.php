@@ -13,6 +13,17 @@
                     dynamic_sidebar('footer-widget-middle');
                 }
                 ?>
+                <?php query_posts('showposts=2'); ?>
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                            <!-- Title -->
+                            <h2 class="footer-post-title"><?php the_title(); ?></h2><br>
+                            <!-- Content -->
+                            <div class="footer-post-content"><?php the_excerpt(); ?></div>
+                <?php endwhile;
+                else:
+                endif;
+                wp_reset_query();?>
+
             </div>
             <div class="col-lg-4">
                 <?php
