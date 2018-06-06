@@ -26,8 +26,20 @@ add_action( 'init', 'register_my_menu' );
  * Register sidebars and widgetized areas.
  *
  */
-function arphabet_widgets_init() {
+//Sidebar Register
+$args = array(
+    'name'          => __( 'Sidebar name', 'theme_text_domain' ),
+    'id'            => 'unique-sidebar-id',    // ID should be LOWERCASE  ! ! !
+    'description'   => '',
+    'class'         => '',
+    'before_widget' => '<li id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</li>',
+    'before_title'  => '<h2 class="widgettitle">',
+    'after_title'   => '</h2>' );
+register_sidebar( $args );
 
+function arphabet_widgets_init() {
+//      Footer Widgets
     register_sidebar( array(
         'name' => 'Footer Widget Left',
         'id' => 'footer-widget-left',
@@ -53,6 +65,43 @@ function arphabet_widgets_init() {
         'before_widget' => '<div class="footer-3">',
         'after_widget' => '</div>',
         'before_title' => '<h3 class="footer-title">',
+        'after_title' => '</h3>',
+    ) );
+//    Sidebar Widgets
+    register_sidebar( array(
+        'name' => 'Sidebar Widget 0',
+        'id' => 'sidebar-widget-0',
+        'description' => 'Appears in the sidebar area',
+        'before_widget' => '<div class="sidebar-0">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="sidebar-title">',
+        'after_title' => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name' => 'Sidebar Widget 1',
+        'id' => 'sidebar-widget-1',
+        'description' => 'Appears in the sidebar area',
+        'before_widget' => '<div class="sidebar-1">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="sidebar-title">',
+        'after_title' => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name' => 'Sidebar Widget 2',
+        'id' => 'sidebar-widget-2',
+        'description' => 'Appears in the sidebar area',
+        'before_widget' => '<div class="sidebar-2">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="sidebar-title">',
+        'after_title' => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name' => 'Sidebar Widget 3',
+        'id' => 'sidebar-widget-3',
+        'description' => 'Appears in the sidebar area',
+        'before_widget' => '<div class="sidebar-3">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="sidebar-title">',
         'after_title' => '</h3>',
     ) );
 

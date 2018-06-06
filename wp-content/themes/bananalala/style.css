@@ -84,7 +84,7 @@ body{
 /*Posts*/
 .post-block{
     height: 295px;
-    width: 70%;
+    width: 100%;
     background-color: #fff;
     margin-bottom: 55px;
 }
@@ -127,8 +127,32 @@ body{
 
 /*Sidebar*/
 .sidebar{
-
+    background-color: #8e8d8d;
+    width: 15%;
+    float: right;
+    display: inline-block;
 }
+#content{
+    width: 85%;
+}
+.page{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.searchform .screen-reader-text {
+    display:none;
+}
+#searchsubmit {
+    position:absolute;
+    top:5px;
+    left:135px;
+    width:40px;
+    height:40px;
+    background: url("images/Pink Floyd ") top left no-repeat;
+    border: none;
+}
+
 /*Media Query*/
 @media screen and (max-width: 1036px) {
     .footer-title{

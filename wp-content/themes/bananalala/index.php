@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="page">
 <div id="content">
     <!-- Posts -->
 <!--    --><?php //query_posts('posts_per_page=2'); ?>
@@ -6,7 +7,6 @@
         <div class="post-block">
             <!-- Thumbnail -->
             <div class="post-image"><?php the_post_thumbnail(); ?></div>
-
             <!-- Title -->
             <h2 class="post-title"><?php the_title(); ?></h2><br>
             <!-- Subtitle -->
@@ -29,4 +29,5 @@
     wp_reset_query();?>
 </div>
 <?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>
