@@ -1,13 +1,13 @@
     <div class="container-fluid footer" style="background-color: #<?php get_theme_mod( 'footer_color' ); ?>">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 footer-widget-block">
                 <?php
                 if(is_active_sidebar('footer-widget-left')){
                     dynamic_sidebar('footer-widget-left');
                 }
                 ?>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 footer-widget-block">
                 <?php
                 if(is_active_sidebar('footer-widget-middle')){
                     dynamic_sidebar('footer-widget-middle');
@@ -25,7 +25,7 @@
                 wp_reset_query();?>
 
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 footer-widget-block">
                 <?php
                 if(is_active_sidebar('footer-widget-right')){
                     dynamic_sidebar('footer-widget-right');

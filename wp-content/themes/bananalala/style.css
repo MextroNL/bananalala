@@ -69,6 +69,8 @@ body{
     font-family: BebasNeue;
     color: #fff;
     font-size: 41pt;
+}
+.footer-widget-block{
     padding-left: 100px;
 }
 .footer-1{
@@ -79,7 +81,13 @@ body{
     list-style: none;
     text-decoration: none;
 }
-.footer-3{
+.footer-post-title{
+    font-size: 16pt;
+}
+.footer-post-content{
+    font-size: 12pt;
+}
+.footer-3 a{
     list-style-type: none;
     color: #fff;
     text-decoration: none;
