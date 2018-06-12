@@ -83,6 +83,10 @@ body{
 }
 .footer-post-title{
     font-size: 16pt;
+    color: #fff;
+}
+.footer-post-title:hover{
+    text-decoration: underline;
 }
 .footer-post-content{
     font-size: 12pt;
@@ -119,11 +123,29 @@ body{
     font-family: BebasNeue;
     display: inline;
     padding-left: 20px;
+    color: #393939;
+}
+.post-title:hover{
+    text-decoration: underline;
 }
 .post-subtitle{
     font-family: Tahoma;
     display: inline;
     padding-left: 20px;
+}
+
+.read-more{
+    float: right;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    width: 190px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f2d513;
+    color: black;
+    font-family: BebasNeue;
+    font-size: 20pt;
 
 }
 
@@ -202,18 +224,120 @@ body{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.searchform .screen-reader-text {
-    display:none;
+/*Single Post*/
+.single-block{
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 55px;
+    color: #393939;
 }
-#searchsubmit {
-    position:absolute;
-    top:5px;
-    left:135px;
-    width:40px;
-    height:40px;
-    background: url("images/Pink Floyd ") top left no-repeat;
-    border: none;
+.single-image img{
+    float: left;
+    display: block;
+    width: 295px;
+    height: 295px;
 }
+.single-content{
+    font-family: Tahoma;
+    padding-left: 20px;
+    width: 70%;
+    display: inline-block;
+    padding-top: 15px;
+}
+.single-title{
+    padding-top: 15px;
+    font-family: BebasNeue;
+    display: inline;
+    padding-left: 20px;
+    color: #393939;
+}
+
+.single-subtitle{
+    font-family: Tahoma;
+    display: inline;
+    padding-left: 20px;
+
+}
+.back-block{
+    height: 100px;
+    width: 100%;
+    background-color: #f2d513;
+}
+#upper_button{
+    vertical-align: middle;
+    line-height: 100px;
+}
+#lower_button{
+    margin-left: 320px;
+}
+.back_button{
+    list-style-image:url('images/previous.png');
+
+    width: auto;
+}
+.terug{
+    color: #393939;
+    font-size: 15pt;
+}
+
+.terug:hover{
+    text-decoration: underline;
+}
+/*Search*/
+/*.searchform .screen-reader-text {*/
+    /*display:none;*/
+/*}*/
+/*#searchsubmit {*/
+    /*background: url('images/search.png');*/
+    /*background: #222222;*/
+    /*color: white;*/
+    /*font-size: 17px;*/
+    /*border: 1px solid grey;*/
+    /*border-left: none; !* Prevent double borders *!*/
+    /*cursor: pointer;*/
+    /*font-size: 5pt;*/
+/*}*/
+/*input#s{*/
+    /*border-radius: 2px;*/
+/*}*/
+/* Search field*/
+.example{
+    margin-top: 5px;
+}
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    font-size: 15px;
+}
+
+/* Submit button */
+form.example button {
+    float: right;
+    width: 20%;
+    height: 44px;
+    background: black   ;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div.textwidget.custom-html-widget {
+    margin-bottom: 20px;
+}
+
 
 /*Media Query*/
 @media screen and (max-width: 1036px) {
@@ -249,3 +373,7 @@ body{
         height: auto;
     }
 }
+
+
+
+

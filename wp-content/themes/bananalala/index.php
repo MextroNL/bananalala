@@ -9,9 +9,9 @@
         <div class="row featured-post-block">
             <div class="col-lg-6">
             <!-- Title -->
-                <h2 class="featured-post-title"><?php the_title(); ?></h2><br>
+                <h2 class="featured-post-title"><?php the_title(); ?></h2>
             <!-- Content -->
-                <div class="featured-post-content"><?php the_content(); ?></div></div>
+                <div class="featured-post-content"><?php echo wp_trim_words( get_the_content(), 150, '...' );?></div></div>
             <!-- Thumbnail -->
                 <div class="col-lg-6 featured-post-image"><?php the_post_thumbnail(); ?></div>
 
@@ -33,18 +33,20 @@
             <!-- Thumbnail -->
             <div class="post-image"><?php the_post_thumbnail(); ?></div>
             <!-- Title -->
-            <h2 class="post-title"><?php the_title(); ?></h2><br>
+            <a href="<?php the_permalink(); ?>"> <h2 class="post-title"><?php the_title(); ?></h2></a><br>
             <!-- Subtitle -->
             <h5 class="post-subtitle">Posted by: <?php the_author() ?> - <?php the_date() ?></h5>
             <!-- Content -->
-            <div class="post-content"><?php the_excerpt(); ?></div>
+            <div class="post-content"><?php echo wp_trim_words( get_the_content(), 150, '...' );?></div>
+            <a href="<?php the_permalink(); ?>"><div class="read-more">Read More</div></a>
 
         </div>
     <?php endwhile;?>
     <nav id="page-nav">
         <ul class="clear-fix">
-            <a href="<?php previous_posts_link('previous page')?>"><li class="prev-link"></li></a>
-            <li class="next-link"><?php next_posts_link('next page') ?></li><i class=""></i>
+            <li class="prev-link"><?php previous_posts_link('previous page') ?></li>
+            <li class="next-link"><?php next_posts_link('next page') ?></li>
+
         </ul>
     </nav>
     </div>
