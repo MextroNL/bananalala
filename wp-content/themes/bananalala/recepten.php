@@ -1,37 +1,31 @@
 <?php /*Template Name: Recepten*/ ?>
 <?php get_header(); ?>
+<div class="row">
 <!-- Posts loop -->
-<?php query_posts('cat=3'); ?>
+<?php query_posts('cat=5&showposts=4'); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <div class="recepten-block">
+    <div class="col-lg-3 recepten-block">
         <!-- Thumbnail -->
-        <div class="post-image"><?php the_post_thumbnail(); ?></div>
+        <div class="recepten-image"><?php the_post_thumbnail(); ?></div>
         <!-- Title -->
-        <a href="<?php the_permalink(); ?>"> <h2 class="post-title"><?php the_title(); ?></h2></a><br>
+        <a href="<?php the_permalink(); ?>"><h2 class="recepten-title"><?php the_title(); ?></h2></a>
         <!-- Subtitle -->
-        <h5 class="post-subtitle">Posted by: <?php the_author() ?> - <?php the_date() ?></h5>
+        <h5 class="recepten-subtitle">Posted by: <?php the_author() ?> - <?php the_date() ?></h5>
         <!-- Content -->
-        <div class="post-content"><?php echo wp_trim_words( get_the_content(), 150, '...' );?></div>
-        <a href="<?php the_permalink(); ?>"><div class="read-more">Read More</div></a>
+        <div class="recepten-content"><?php echo wp_trim_words( get_the_content(), 50, '...' );?></div>
+        <a href="<?php the_permalink(); ?>"><div id="read-more-recepten" class="read-more">Read More</div></a>
 
     </div>
+
 <?php endwhile;?>
-    <nav id="page-nav">
-        <ul class="clear-fix">
-            <li class="prev-link"><?php previous_posts_link('previous page') ?></li>
-            <li class="next-link"><?php next_posts_link('next page') ?></li>
 
-        </ul>
-    </nav>
-    </div>
     <?php
 else:
 endif;
 wp_reset_query();?>
 
-    <div class="row">
-        <div class="col-lg-3">
+</div>
 
-        </div>
-    </div>
+
+
 <?php get_footer(); ?>

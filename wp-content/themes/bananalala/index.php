@@ -38,7 +38,7 @@
             <h5 class="post-subtitle">Posted by: <?php the_author() ?> - <?php the_date() ?></h5>
             <!-- Content -->
             <div class="post-content"><?php echo wp_trim_words( get_the_content(), 150, '...' );?></div>
-            <a href="<?php the_permalink(); ?>"><div class="read-more">Read More</div></a>
+            <a href="<?php the_permalink(); ?>"><div id="read-more-index" class="read-more">Read More</div></a>
 
         </div>
     <?php endwhile;?>

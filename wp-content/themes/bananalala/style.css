@@ -135,7 +135,6 @@ body{
 }
 
 .read-more{
-    float: right;
     display: block;
     text-align: center;
     text-transform: uppercase;
@@ -146,7 +145,9 @@ body{
     color: black;
     font-family: BebasNeue;
     font-size: 20pt;
-
+}
+#read-more-index{
+    float: right;
 }
 
 .prev-link{
@@ -273,7 +274,6 @@ body{
 }
 .back_button{
     list-style-image:url('images/previous.png');
-
     width: auto;
 }
 .terug{
@@ -284,6 +284,52 @@ body{
 .terug:hover{
     text-decoration: underline;
 }
+
+
+/*Recepten*/
+.recepten-block{
+    width: 20px;
+    background-color: #fff;
+    margin-bottom: 55px;
+    color: #393939;
+    display: inline-block;
+}
+.recepten-image img{
+    width: 295px;
+    height: 295px;
+    margin: auto;
+    display: block;
+}
+.recepten-title{
+    padding-top: 15px;
+    font-family: BebasNeue;
+    padding-left: 20px;
+    color: #393939;
+    display: inline-block;
+}
+.recepten-title:hover{
+    text-decoration: underline;
+}
+.recepten-subtitle{
+    font-family: Tahoma;
+    padding-left: 20px;
+    display: inline-block;
+}
+.recepten-content{
+    font-family: Tahoma;
+    padding-left: 20px;
+    width: 70%;
+    display: inline-block;
+    padding-top: 15px;
+}
+#read-more-recepten{
+    margin: auto;
+}
+
+
+
+
+
 /*Search*/
 /*.searchform .screen-reader-text {*/
     /*display:none;*/
