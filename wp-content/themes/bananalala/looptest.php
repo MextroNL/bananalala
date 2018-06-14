@@ -58,3 +58,28 @@
 <?php get_sidebar(); ?>
 </div>
 <?php get_footer(); ?>
+
+
+
+<?php
+$args = array(
+    'posts_per_page' => 10,
+    'post_type'      => 'post',
+    'paged'          => get_query_var( 'paged' ),
+);
+$wp_query = new WP_Query( $args );
+while ( $wp_query->have_posts() ) : $wp_query->the_post();
+    get_template_part( 'templates/content', 'posts' );
+endwhile;
+
+/*
+  PAGINATION
+*/
+if ( function_exists( 'page_navi' ) ) {
+    ?>
+
+    <div id="pagination">
+        <?php page_navi(); ?>
+    </div>
+<?php }
+wp_reset_query(); ?>

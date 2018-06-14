@@ -16,7 +16,7 @@
                 <?php query_posts('showposts=2'); ?>
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                             <!-- Title -->
-                            <a href="<?php the_permalink(); ?>"><h2 class="footer-post-title"><?php the_title(); ?></h2></a>
+                            <a href="<?php the_permalink(); ?>#post-scroll"><h2 class="footer-post-title"><?php the_title(); ?></h2></a>
                             <!-- Content -->
                             <div class="footer-post-content"><?php echo wp_trim_words( get_the_content(), 20, '...' );?></div><br>
                 <?php endwhile;

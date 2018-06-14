@@ -146,6 +146,11 @@ body{
     font-family: BebasNeue;
     font-size: 20pt;
 }
+.read-more:hover{
+    color: black;
+    text-decoration: none;
+    background-color: #f29613;
+}
 #read-more-index{
     float: right;
 }
@@ -220,6 +225,8 @@ body{
 
 .content{
     margin-top: 50px;
+    margin-left: 2px;
+    margin-right: 0px;
 }
 .page{
     padding-top: 50px;
@@ -249,7 +256,7 @@ body{
 .single-title{
     padding-top: 15px;
     font-family: BebasNeue;
-    display: inline;
+    display: inline-block;
     padding-left: 20px;
     color: #393939;
 }
@@ -260,73 +267,114 @@ body{
     padding-left: 20px;
 
 }
+/*Geel back block*/
 .back-block{
     height: 100px;
     width: 100%;
     background-color: #f2d513;
+    margin-left: -5px;
 }
 #upper_button{
-    vertical-align: middle;
     line-height: 100px;
 }
 #lower_button{
     margin-left: 320px;
 }
-.back_button{
-    list-style-image:url('images/previous.png');
-    width: auto;
+/*Back Div*/
+.go-back{
+
 }
+.go-back:hover{
+    text-decoration: none;
+}
+.go-back a:hover{
+    text-decoration: none;
+}
+/*Font Awesome*/
+.back-arrow{
+    color: #393939;
+    font-size: 20pt;
+
+}
+.back-arrow:hover{
+    text-decoration: none;
+}
+/*Span*/
 .terug{
     color: #393939;
-    font-size: 15pt;
+    font-size: 20pt;
+    border-bottom: none;
 }
-
 .terug:hover{
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
 /*Recepten*/
+.recepten-posts{
+    margin: auto;
+}
+.recepten-rij{
+    flex-wrap: nowrap;
+}
 .recepten-block{
-    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     background-color: #fff;
     margin-bottom: 55px;
     color: #393939;
     display: inline-block;
+    width: auto;
+    padding: 0px 0px 0px 0px;
+}
+.recepten-image{
+    width: 100%;
 }
 .recepten-image img{
-    width: 295px;
-    height: 295px;
-    margin: auto;
+    width: 100%;
+    height: auto;
     display: block;
 }
 .recepten-title{
     padding-top: 15px;
     font-family: BebasNeue;
-    padding-left: 20px;
+    padding-left: 10px;
     color: #393939;
     display: inline-block;
+    font-size: 30pt;
 }
 .recepten-title:hover{
     text-decoration: underline;
 }
 .recepten-subtitle{
     font-family: Tahoma;
-    padding-left: 20px;
+    padding-left: 10px;
     display: inline-block;
 }
 .recepten-content{
     font-family: Tahoma;
-    padding-left: 20px;
-    width: 70%;
+    padding-left: 10px;
     display: inline-block;
     padding-top: 15px;
 }
 #read-more-recepten{
-    margin: auto;
+    margin: 20px auto;
 }
 
+/*Page*/
+.page-title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: BebasNeue;
+    text-transform: uppercase;
+}
 
+.page-content{
+    padding: 0 10% 0 10%;
+    background-color: #fff;
+    border-right: 20px solid #f5f4f4;
+    height: fit-content;
+}
 
 
 
