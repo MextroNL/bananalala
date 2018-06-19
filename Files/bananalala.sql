@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 19 jun 2018 om 20:21
+-- Gegenereerd op: 19 jun 2018 om 20:32
 -- Serverversie: 10.1.30-MariaDB
 -- PHP-versie: 7.2.2
 
@@ -28,6 +28,7 @@ SET time_zone = "+00:00";
 -- Tabelstructuur voor tabel `wp_commentmeta`
 --
 
+DROP TABLE IF EXISTS `wp_commentmeta`;
 CREATE TABLE `wp_commentmeta` (
   `meta_id` bigint(20) UNSIGNED NOT NULL,
   `comment_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
@@ -41,6 +42,7 @@ CREATE TABLE `wp_commentmeta` (
 -- Tabelstructuur voor tabel `wp_comments`
 --
 
+DROP TABLE IF EXISTS `wp_comments`;
 CREATE TABLE `wp_comments` (
   `comment_ID` bigint(20) UNSIGNED NOT NULL,
   `comment_post_ID` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
@@ -65,6 +67,7 @@ CREATE TABLE `wp_comments` (
 -- Tabelstructuur voor tabel `wp_links`
 --
 
+DROP TABLE IF EXISTS `wp_links`;
 CREATE TABLE `wp_links` (
   `link_id` bigint(20) UNSIGNED NOT NULL,
   `link_url` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
@@ -87,6 +90,7 @@ CREATE TABLE `wp_links` (
 -- Tabelstructuur voor tabel `wp_options`
 --
 
+DROP TABLE IF EXISTS `wp_options`;
 CREATE TABLE `wp_options` (
   `option_id` bigint(20) UNSIGNED NOT NULL,
   `option_name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
@@ -229,6 +233,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 -- Tabelstructuur voor tabel `wp_postmeta`
 --
 
+DROP TABLE IF EXISTS `wp_postmeta`;
 CREATE TABLE `wp_postmeta` (
   `meta_id` bigint(20) UNSIGNED NOT NULL,
   `post_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
@@ -386,6 +391,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 -- Tabelstructuur voor tabel `wp_posts`
 --
 
+DROP TABLE IF EXISTS `wp_posts`;
 CREATE TABLE `wp_posts` (
   `ID` bigint(20) UNSIGNED NOT NULL,
   `post_author` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
@@ -483,6 +489,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 -- Tabelstructuur voor tabel `wp_termmeta`
 --
 
+DROP TABLE IF EXISTS `wp_termmeta`;
 CREATE TABLE `wp_termmeta` (
   `meta_id` bigint(20) UNSIGNED NOT NULL,
   `term_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
@@ -496,6 +503,7 @@ CREATE TABLE `wp_termmeta` (
 -- Tabelstructuur voor tabel `wp_terms`
 --
 
+DROP TABLE IF EXISTS `wp_terms`;
 CREATE TABLE `wp_terms` (
   `term_id` bigint(20) UNSIGNED NOT NULL,
   `name` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
@@ -520,6 +528,7 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 -- Tabelstructuur voor tabel `wp_term_relationships`
 --
 
+DROP TABLE IF EXISTS `wp_term_relationships`;
 CREATE TABLE `wp_term_relationships` (
   `object_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
   `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
@@ -552,6 +561,7 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 -- Tabelstructuur voor tabel `wp_term_taxonomy`
 --
 
+DROP TABLE IF EXISTS `wp_term_taxonomy`;
 CREATE TABLE `wp_term_taxonomy` (
   `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL,
   `term_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
@@ -578,6 +588,7 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 -- Tabelstructuur voor tabel `wp_usermeta`
 --
 
+DROP TABLE IF EXISTS `wp_usermeta`;
 CREATE TABLE `wp_usermeta` (
   `umeta_id` bigint(20) UNSIGNED NOT NULL,
   `user_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
@@ -621,6 +632,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 -- Tabelstructuur voor tabel `wp_users`
 --
 
+DROP TABLE IF EXISTS `wp_users`;
 CREATE TABLE `wp_users` (
   `ID` bigint(20) UNSIGNED NOT NULL,
   `user_login` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
