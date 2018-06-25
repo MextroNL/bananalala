@@ -2,10 +2,17 @@
 <project version="4">
   <component name="PublishConfigData" serverName="XAMPP">
     <serverData>
-      <paths name="XAMPP">
+      <paths name="Xampp">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="bananalala/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="uikit_server">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

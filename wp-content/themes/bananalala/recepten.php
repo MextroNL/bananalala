@@ -15,7 +15,7 @@
                 <!-- Thumbnail -->
                 <div class="recepten-image"><?php the_post_thumbnail(); ?></div>
                 <!-- Title -->
-                <a href="<?php the_permalink(); ?>"><h2 class="recepten-title"><?php the_title(); ?></h2></a>
+                <a href="<?php the_permalink(); ?>"><h2 class="recepten-title"><?php the_title(); ?></h2></a><br>
                 <!-- Subtitle -->
                 <h5 class="recepten-subtitle">Posted by: <?php the_author() ?><br><?php echo get_the_date(); ?></h5>
                 <!-- Content -->
