@@ -155,12 +155,13 @@ body{
     float: right;
 }
 
-.prev-link{
-    list-style-image:url('images/previous.png');
+#page-nav{
+    text-align: center;
 }
-
-.next-link{
-    list-style-image:url('images/next.png');
+#page-nav a{
+    color: #393939;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /*Featured Post*/

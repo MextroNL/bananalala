@@ -13,16 +13,16 @@
                     dynamic_sidebar('footer-widget-middle');
                 }
                 ?>
-                <?php query_posts('showposts=2'); ?>
-                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                            <!-- Title -->
-                            <a href="<?php the_permalink(); ?>#post-scroll"><h2 class="footer-post-title"><?php the_title(); ?></h2></a>
-                            <!-- Content -->
-                            <div class="footer-post-content"><?php echo wp_trim_words( get_the_content(), 20, '...' );?></div><br>
-                <?php endwhile;
-                else:
-                endif;
-                wp_reset_query();?>
+                <?php
+                $catquery = new WP_Query( 'posts_per_page=2' );
+                while($catquery->have_posts()) : $catquery->the_post();
+                    ?>
+                    <!-- Title -->
+                    <a href="<?php the_permalink(); ?>#post-scroll"><h2 class="footer-post-title"><?php the_title(); ?></h2></a>
+                    <!-- Content -->
+                    <div class="footer-post-content"><?php echo wp_trim_words( get_the_content(), 20, '...' );?></div><br>
+                <?php endwhile; ?>
+                <?php wp_reset_query(); // reset the query ?>
 
             </div>
             <div class="col-lg-4 footer-widget-block">
