@@ -1,0 +1,474 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: KBZipaDeeDooDah;
+    src: url(fonts/KBZipaDeeDooDah.ttf);
+}
+html{
+    background-color: #f5f4f4;
+}
+body{
+    margin: 20px;
+    background-color: #f5f4f4;
+}
+.bloginfo{
+    font-family: KBZipaDeeDooDah;
+    color: #393939;
+    font-size: 30pt;
+    float: left;
+}
+
+.headerimg{
+    width: 100%;
+    height: 100%;
+    margin-top: -15px;
+}
+.right-nav{
+    display: block;
+    float: right;
+}
+
+.right-nav ul{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    padding: 20px 150px 0px 0px;
+}
+
+.right-nav ul li{
+    padding: 4px 20px 22px 20px;
+    display: block;
+    font-family: BebasNeue;
+}
+
+.right-nav ul li a{
+    text-decoration: none;
+    color: #393939;
+    font-size: 18pt;
+    text-align: center;
+
+}
+.current-menu-item{
+    background-color: #f2d513;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.footer{
+    background-color: #202020;
+    width: 100%;
+    height: 336px;
+    bottom: 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-title{
+    font-family: BebasNeue;
+    color: #fff;
+    font-size: 41pt;
+}
+.footer-widget-block{
+    padding-left: 100px;
+}
+.footer-1{
+    list-style: none;
+    text-decoration: none;
+}
+.footer-2{
+    list-style: none;
+    text-decoration: none;
+}
+.footer-post-title{
+    font-size: 16pt;
+    color: #fff;
+}
+.footer-post-title:hover{
+    text-decoration: underline;
+}
+.footer-post-content{
+    font-size: 12pt;
+}
+.footer-3 a{
+    list-style-type: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Posts*/
+.post-block{
+    height: 295px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 55px;
+    color: #393939;
+}
+.post-image img{
+    float: left;
+    display: block;
+    width: 295px;
+    height: 295px;
+}
+.post-content{
+    font-family: Tahoma;
+    padding-left: 20px;
+    width: 70%;
+    display: inline-block;
+    padding-top: 15px;
+}
+.post-title{
+    padding-top: 15px;
+    font-family: BebasNeue;
+    display: inline;
+    padding-left: 20px;
+    color: #393939;
+}
+.post-title:hover{
+    text-decoration: underline;
+}
+.post-subtitle{
+    font-family: Tahoma;
+    display: inline;
+    padding-left: 20px;
+}
+
+.read-more{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    width: 190px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f2d513;
+    color: black;
+    font-family: BebasNeue;
+    font-size: 20pt;
+}
+.read-more:hover{
+    color: black;
+    text-decoration: none;
+    background-color: #f29613;
+}
+#read-more-index{
+    float: right;
+}
+
+#page-nav{
+    text-align: center;
+}
+#page-nav a{
+    color: #393939;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*Featured Post*/
+.featured-post-block{
+    margin: -20px;
+    width: 102%;
+    background-color: #f2d513;
+    height: 300px;
+    color: #393939;
+}
+.featured-post-title{
+    font-family: BebasNeue;
+    font-size: 55pt;
+}
+.featured-post-content{
+
+}
+.featured-post-image img{
+    display: block;
+    float: right;
+    height: 300px;
+}
+
+
+/*Sidebar*/
+.sidebar{
+    background-color: #8e8d8d;
+    width: 15%;
+    float: right;
+    display: inline-block;
+    color: #fff;
+
+}
+
+.sidebar-title{
+    font-family: BebasNeue;
+    font-size: 35pt;
+    padding-top: 20px;
+    text-align: left;
+}
+.sidebar-1{
+    line-height: normal;
+}
+.sidebar-2 ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.sidebar-2 li {
+    padding-left: 1em;
+    text-indent: -.7em;
+}
+.sidebar-2 li:before {
+    content: "• ";
+    font-size: 15pt;
+    color: #f2d513; /* or whatever color you prefer */
+}
+.sidebar-3{
+    text-align: center;
+}
+
+.content{
+    margin-top: 50px;
+    margin-left: 2px;
+    margin-right: 0px;
+}
+.page{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/*Single Post*/
+.single-block{
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 55px;
+    color: #393939;
+}
+.single-image img{
+    float: left;
+    display: block;
+    width: 295px;
+    height: 295px;
+}
+.single-content{
+    font-family: Tahoma;
+    padding-left: 20px;
+    width: 70%;
+    display: inline-block;
+    padding-top: 15px;
+}
+.single-title{
+    padding-top: 15px;
+    font-family: BebasNeue;
+    display: inline-block;
+    padding-left: 20px;
+    color: #393939;
+}
+
+.single-subtitle{
+    font-family: Tahoma;
+    display: inline;
+    padding-left: 20px;
+
+}
+/*Geel back block*/
+.back-block{
+    height: 100px;
+    width: 100%;
+    background-color: #f2d513;
+    margin-left: -5px;
+}
+#upper_button{
+    line-height: 100px;
+}
+#lower_button{
+    margin-left: 320px;
+}
+/*Back Div*/
+.go-back{
+
+}
+.go-back:hover{
+    text-decoration: none;
+}
+.go-back a:hover{
+    text-decoration: none;
+}
+/*Font Awesome*/
+.back-arrow{
+    color: #393939;
+    font-size: 20pt;
+
+}
+.back-arrow:hover{
+    text-decoration: none;
+}
+/*Span*/
+.terug{
+    color: #393939;
+    font-size: 20pt;
+    border-bottom: none;
+}
+.terug:hover{
+    text-decoration: none;
+}
+
+
+/*Recepten*/
+.recepten-posts{
+    margin: auto;
+}
+.recepten-rij{
+    flex-wrap: nowrap;
+}
+.recepten-block{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #fff;
+    margin-bottom: 55px;
+    color: #393939;
+    display: inline-block;
+    width: auto;
+    padding: 0px 0px 0px 0px;
+}
+.recepten-image{
+    width: 100%;
+}
+.recepten-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.recepten-title{
+    padding-top: 15px;
+    font-family: BebasNeue;
+    padding-left: 10px;
+    color: #393939;
+    display: inline-block;
+    font-size: 30pt;
+}
+.recepten-title:hover{
+    text-decoration: underline;
+}
+.recepten-subtitle{
+    font-family: Tahoma;
+    padding-left: 10px;
+    display: inline-block;
+}
+.recepten-content{
+    font-family: Tahoma;
+    padding-left: 10px;
+    display: inline-block;
+    padding-top: 15px;
+}
+#read-more-recepten{
+    margin: 20px auto;
+}
+
+/*Page*/
+.page-title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: BebasNeue;
+    text-transform: uppercase;
+}
+
+.page-content{
+    padding: 0 10% 0 10%;
+    background-color: #fff;
+    border-right: 20px solid #f5f4f4;
+    height: fit-content;
+}
+
+
+
+/*Search*/
+/*.searchform .screen-reader-text {*/
+    /*display:none;*/
+/*}*/
+/*#searchsubmit {*/
+    /*background: url('images/search.png');*/
+    /*background: #222222;*/
+    /*color: white;*/
+    /*font-size: 17px;*/
+    /*border: 1px solid grey;*/
+    /*border-left: none; !* Prevent double borders *!*/
+    /*cursor: pointer;*/
+    /*font-size: 5pt;*/
+/*}*/
+/*input#s{*/
+    /*border-radius: 2px;*/
+/*}*/
+/* Search field*/
+.example{
+    margin-top: 5px;
+}
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    font-size: 15px;
+}
+
+/* Submit button */
+form.example button {
+    float: right;
+    width: 20%;
+    height: 44px;
+    background: black   ;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div.textwidget.custom-html-widget {
+    margin-bottom: 20px;
+}
+
+
+/*Media Query*/
+@media screen and (max-width: 1036px) {
+    .footer-title{
+        font-size: 3em!important;
+    }
+}
+/*Tablet*/
+@media screen and (max-width: 991px) {
+
+    .footer-title{
+        text-align: center!important;
+        font-size: 2.5em!important;
+        padding-left: 0px!important;
+    }
+    .footer{
+        height: auto;
+    }
+    .footer-1{
+        text-align: center;
+    }
+
+}
+
+/*Phone*/
+@media screen and (max-width: 480px) {
+    .footer-title{
+        text-align: center!important;
+        font-size: 2em!important;
+        padding-left: 0px!important;
+    }
+    .footer{
+        height: auto;
+    }
+}
+
+
+
+
