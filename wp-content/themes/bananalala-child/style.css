@@ -1,0 +1,20 @@
+/*
+Theme Name:   Bananalala Child
+Theme URI:    https://www.bananalala.nl/
+Description:  Bananalala Child Theme
+Author:       Max den Ouden
+Author URI:   https://www.mextro.nl/
+Template:     bananalala
+Version:      1.0.0
+Tags:         bananen, scalda, school, genaaid,
+Text Domain:  bananalala-child
+*/
+
+/*CSS START*/
+
+.featured-post-block{
+    background-color: red;
+}
+.back-block{
+    background-color: red;
+}
